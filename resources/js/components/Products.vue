@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ title }}</h1>
+        <h1 :style="'color: ' + color">{{ title }}</h1>
         <img :src="images[imageIndex]" alt="plaatje" width="300">
         <button class="btn btn-dark" @click="changeImage">Change image</button>
     </div>
@@ -13,7 +13,8 @@ export default {
         title: {
             required: false,
             default: 'Coffee'
-        }
+        },
+        color: '',
     },
 
     data() {

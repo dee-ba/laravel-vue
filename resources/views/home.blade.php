@@ -2,6 +2,7 @@
 
 @section('content')
     <vue-products 
-        title="Thee">
+        title="Cola"
+        color="purple">
     </vue-products>
 @endsection
